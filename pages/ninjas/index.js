@@ -1,11 +1,11 @@
 import styles from '../../styles/Ninjas.module.css'
 import Head from "next/head";
 export const getStaticProps = async () => {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    const data = await res.json();
-   
+    // const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    // const data = await res.json();
+    // console.log(data);
     return {
-        props: { ninjas: data }
+        props: { ninjas: [] }
     }
 }
 
